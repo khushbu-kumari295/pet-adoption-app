@@ -1,0 +1,82 @@
+.carousel {
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+}
+
+.inner-div {
+    white-space: nowrap;
+    transition: transform 0.3s;
+}
+
+.carousel-item {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: center;
+    height: 20rem;
+    background-color: white;
+    color: #fff;
+}
+
+.carousel__control {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    min-width: 3rem;
+    background: rgba(0, 0, 0, 0.2);
+    border: none;
+    color: rgba(0, 0, 0, 0.3);
+    font-size: xxx-large;
+}
+
+.carousel__control:hover {
+    background: rgba(0, 0, 0, 0.5);
+}
+
+
+.carousel__control--previous {
+    left: 0;
+}
+
+.carousel__control--next {
+    right: 0;
+}
+
+.dot-indicator-container {
+    position: absolute;
+    bottom: 0;
+    left: 45%;
+    right: 45%;
+}
+
+.dot-indicator-container ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.dot-indicator-container button {
+    background: 0;
+    background-color: #b3b3b3;
+    border-color: transparent;
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 2px;
+    color: transparent;
+    display: block;
+    height: 0.94rem;
+    margin: auto;
+    width: 0.94rem;
+    cursor: pointer;
+}
+
+.dot-indicator-container .selected {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.carousel img {
+    height: 100%;
+    width: 100%;
+}

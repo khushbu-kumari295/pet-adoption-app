@@ -1,0 +1,415 @@
+@import url('https://fonts.googleapis.com/css2?family=Meow+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Spectral:wght@500&display=swap');
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Spectral', sans-serif;
+}
+
+* {
+  --footer-background-color: brown;
+}
+
+@media (prefers-reduced-motion: no-preference) {}
+
+#root {
+  width: 100%;
+  height: 100%
+}
+
+.pet-loading {
+  width: 100%;
+  margin: auto;
+}
+
+.carousel img {
+  height: 100%;
+}
+
+.plan-adopt-container {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(12, 1fr);
+  background-color: whitesmoke;
+  padding: 1rem 2rem;
+  margin: 5rem 0rem;
+}
+
+.plan-adopt-title {
+  grid-column: span 12;
+  justify-self: center;
+  background-color: transparent;
+}
+
+.card p {
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.card {
+  grid-column: span 12;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  border-radius: 1rem;
+  background-color: white;
+}
+
+.card h3 {
+  text-align: center;
+  padding: 2rem;
+  color: #004c81;
+}
+
+.card a {
+  background-color: white;
+  padding: 0.5rem;
+  margin-top: auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2rem;
+  border: 3px solid #20ccf8;
+  border-radius: 1rem;
+  min-width: 8rem;
+  color: inherit;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color .1s, border-color .1s, box-shadow .1s, color .1s, -webkit-box-shadow .1s;
+}
+
+.card a:hover {
+  background-color: #20ccf8;
+  color: white;
+}
+
+.mission {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 0rem;
+  padding: 0 1rem;
+}
+
+.mission p {
+  max-width: 32rem;
+  margin: 2rem auto;
+  font-size: 1.2rem;
+}
+
+.mission p.inspirational-quote {
+  font-size: 2rem;
+  font-family: 'Meow Script', cursive;
+}
+
+.mission .description {
+  grid-column: span 12;
+  margin: auto;
+  text-align: center;
+}
+
+.mission .mission-image {
+  grid-column: span 12;
+  max-width: 100%;
+  max-height: 45rem;
+}
+
+.mission img {
+  height: 100%;
+  width: 100%;
+}
+
+.about {
+  background-color: whitesmoke;
+}
+
+.footer-quote {
+  text-align: center;
+  color: white;
+}
+
+.footer-info {
+  color: white;
+  text-align: center;
+  margin: 2rem auto;
+}
+
+.footer-info h4 {
+  margin-bottom: 1rem;
+}
+
+.footer-info button {
+  margin-bottom: 1rem;
+}
+
+.footer-site-name {
+  grid-column: span 12;
+  color: white;
+  text-align: center;
+  margin: auto;
+}
+
+.footer-privacy {
+  grid-column: span 12;
+  color: white;
+  text-align: center;
+  margin: auto;
+}
+
+.footer-privacy p {
+  padding: 1rem 0;
+}
+
+.footer-about {
+  grid-column: span 12;
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 1rem;
+  padding: 3rem;
+  font-size: 1.2rem;
+  background: var(--footer-background-color);
+}
+
+.primary-button {
+  color: black;
+  background-color: white;
+  border: 1px solid black;
+  padding: 0.5rem 5rem;
+}
+
+.primary-button:hover {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.1);
+
+}
+
+.faq {
+  margin: 2rem 4rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.2rem;
+}
+
+.faq h1 {
+  margin: 2rem auto;
+  color: white;
+  text-align: center;
+}
+
+.pet-list {
+  background-color: whitesmoke;
+}
+
+.pet-list h2 {
+  margin: 0rem auto;
+  text-align: center;
+  padding: 2rem;
+  background-color: initial;
+  font-size: 2rem;
+}
+
+.new-adoption-checklist {}
+
+.checklist-image {
+  position: absolute;
+  opacity: 0.2;
+}
+
+.checklist-image:after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  bottom: 0;
+  left: 0;
+  pointer-events: none;
+  background-image: linear-gradient(to bottom,
+      rgba(255, 255, 255, 0),
+      rgba(255, 255, 255, 1) 90%);
+  width: 100%;
+  height: 20em;
+}
+
+.checklist-image img {
+  width: 100%;
+  height: 100%;
+}
+
+.checklist-content {
+  padding: 4rem;
+}
+
+.new-adoption-checklist h1 {
+  margin-bottom: 2rem;
+}
+
+.new-adoption-checklist h2 {
+  margin-bottom: 1rem;
+}
+
+.new-adoption-checklist h3 {
+  margin-bottom: 0.5rem;
+}
+
+.new-adoption-checklist p {
+  margin-bottom: 0.5rem;
+}
+
+
+.covid-res {
+  padding: 4rem;
+}
+
+.covid-res h1 {
+  margin-bottom: 2rem;
+}
+
+.covid-res h2 {
+  margin-bottom: 1rem;
+}
+
+.covid-res h3 {
+  margin-bottom: 0.5rem;
+}
+
+.covid-res p {
+  margin-bottom: 0.5rem;
+}
+
+.covid-res ul {
+  margin-bottom: 0.5rem;
+  margin-left: 2rem;
+}
+
+.faq ul {
+  margin: 0 1.3rem;
+}
+
+.faq-image {
+  width: 100%;
+  max-height: 15rem;
+}
+
+.faq-image img {
+  width: 100%;
+  height: 100%;
+}
+
+.faq-section {
+  margin-top: 1.5rem;
+}
+
+.faq-section h2 {
+  margin-bottom: 0.5rem;
+}
+
+.upcoming-schedules {
+  padding: 1rem;
+}
+
+.upcoming-schedules .title {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.appointment-list {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 1rem;
+}
+
+.appointment-item {
+  border: 1px solid black;
+  background-color: white;
+  box-shadow: 0.1rem 0.1rem grey;
+  grid-column: span 12;
+  padding: 1rem;
+  text-transform: capitalize;
+  display: flex;
+  flex-direction: column;
+}
+
+.appointment-item div {
+  margin-bottom: 0.4rem;
+}
+
+.appointment-item button {
+  width: 100%;
+  margin-top: auto;
+  margin-bottom: 1rem;
+  border: 1px solid rgb(175, 159, 132);
+
+}
+
+.appointment-item button:focus, .appointment-item button:hover {
+  background-color: rgb(175, 159, 132);
+  color: white;
+}
+
+.footer-privacy a {
+  color: white;
+  text-decoration-color: white;
+}
+
+.privacy-header {
+  margin: 1rem auto;
+  text-align: center;
+}
+
+.privacy-body {
+  padding: 2rem;
+}
+
+.license-content {
+  margin: 1rem 0rem;
+}
+
+.covid-image {
+  max-height: 20rem;
+  max-width: 30rem;
+  overflow: hidden;
+  margin: auto;
+}
+
+.covid-image img {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+/** Desktop sizes
+*/
+@media (min-width: 950px) {
+
+  .card {
+    grid-column: span 4;
+  }
+
+  .mission .description {
+    grid-column: span 6;
+  }
+
+  .mission .mission-image {
+    grid-column: span 6;
+  }
+
+  .footer-about {
+    grid-column: span 6;
+  }
+
+
+  .footer-site-name {
+    grid-column: span 6;
+  }
+
+  .plan-adopt-container {
+    padding: 1rem 8rem;
+  }
+
+  .appointment-item {
+    grid-column: span 4;
+  }
+}

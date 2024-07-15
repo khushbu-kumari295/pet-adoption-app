@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Corinthia:wght@700&display=swap');
+
+.special-events {
+    margin: 2rem 3rem;
+}
+
+.special-events h1 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.special-events-content {
+    margin: 2rem 0;
+}
+
+.special-events-content h4 {
+    margin-top: 1.5rem;
+}
+
+.event-image {
+    max-height: 25rem;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.event-image img {
+    width: 100%;
+    height: 100%;
+}
+
+.dog-quote {
+    margin: 0 auto;
+    text-align: center;
+    font-family: 'Corinthia', cursive;
+    font-size: 2rem;
+}
+
+.pet-mas-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.pet-mas {
+    grid-column: span 1;
+    max-width: 50rem;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.pet-mas-content {
+    grid-column: span 1;
+    margin: 0 2rem;
+}

@@ -1,0 +1,160 @@
+/** Global Variables */
+#header {
+    --header-background-color: white;
+    --menu-button-color: black;
+    --submenu-text-color: black;
+    --submenu-background-color: whitesmoke;
+    --localnav-hover-color: rgba(128, 128, 128, 0.918);
+    --localnav-hover-text-color: white;
+    --main-background-color: rgba(128, 128, 128, 0.918);
+    --footer-background-color: white;
+    --footer-text-color: blanchedalmond;
+    --link-visted-color: blanchedalmond;
+    --animation-from-color: indianred;
+    --animation-to-color: red;
+    --animation-middle-color: white;
+    --pageheader-hover-color: red;
+}
+
+.header * {
+    text-decoration: none;
+}
+
+/** Desktop size */
+.header {
+    position: sticky;
+    background-color: var(--header-background-color);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, .1);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    z-index: 1000;
+    padding: 0 1rem 0 1rem;
+    height: 8rem;
+}
+
+.header .navbar {
+    width: 100%;
+}
+
+.header .navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.header .navbar ul li {
+    position: relative;
+}
+
+.header .navbar ul li a, .header .navbar ul li button {
+    font-size: 1rem;
+    padding: 1rem;
+    color: var(--submenu-text-color);
+    display: block;
+    background: var(--header-background-color);
+    border: none;
+}
+
+.header .navbar ul li a:hover, .header .navbar ul li button:hover {
+    background: var(--localnav-hover-color);
+    color: var(--localnav-hover-text-color);
+}
+
+.header .navbar ul li ul {
+    position: absolute;
+    left: 0;
+    width: fit-content;
+    background: var(--header-background-color);
+    overflow: hidden;
+    visibility: hidden;
+    max-height: 0;
+    overflow: hidden;
+    visibility: hidden;
+}
+
+.header .navbar ul li ul li {
+    width: 100%;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.header .navbar ul li:focus-within>ul {
+    visibility: visible;
+    max-height: 90vh;
+    display: inherit;
+}
+
+#menu-bar {
+    display: none;
+}
+
+.menu-bar-icon {
+    font-size: xxx-large;
+}
+
+.close {
+    font-size: x-large;
+}
+
+header label {
+    color: var(--submenu-text-color);
+    cursor: pointer;
+    display: none;
+}
+
+
+/** Mobile size **/
+@media(max-width: 720px) {
+    .header {
+        top: 0;
+        left: 0;
+        right: 0;
+        padding: 1rem 1rem 1rem 1rem;
+    }
+
+    .header label {
+        display: initial;
+    }
+
+    .header .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: #fff;
+        border-top: 1px solid rgba(0, 0, 0, .1);
+        display: none;
+    }
+
+    .header .navbar ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .header .navbar ul li {
+        width: 100%;
+    }
+
+    .header .navbar ul li ul, .header .navbar ul li button {
+        position: relative;
+        width: 100%;
+        text-align: inherit;
+    }
+
+    .header .navbar ul li ul li a {
+        background: var(--submenu-background-color);
+    }
+
+    #menu-bar:checked~.navbar {
+        display: initial;
+    }
+}
+
+
+@media (prefers-reduced-motion: no-preference) {
+    .header .navbar ul li ul {
+        transition: max-height 1s;
+    }
+
+}

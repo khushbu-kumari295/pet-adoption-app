@@ -1,0 +1,159 @@
+.form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: white;
+    margin: 0 0 4rem 0rem;
+}
+
+.form-title {
+    grid-column: span 2;
+    margin: 3rem auto;
+    text-align: center;
+}
+
+.form-container {
+    grid-column: span 2;
+    padding: 0 2rem;
+}
+
+.form-container h3 {
+    margin-bottom: 0.5rem;
+}
+
+.form-image {
+    grid-column: span 2;
+    max-height: 40rem;
+    padding: 2rem 2rem;
+}
+
+.form-image img {
+    height: 100%;
+    width: 100%;
+}
+
+.hours {
+    margin-bottom: 1rem;
+}
+
+.hours p {
+    margin-bottom: 0.5rem;
+}
+
+.form-section {
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.form-section .input-field {
+    grid-column: span 1;
+    margin-bottom: 2rem;
+    width: 100%;
+}
+
+.input-field label {
+    margin-right: 0.6rem;
+}
+
+.input-field input, .input-field select, .input-field textarea {
+    width: 100%;
+    height: 2.2rem;
+    margin: 0.2rem 0;
+    border: 2px solid black;
+}
+
+.input-field-box {
+    max-width: 35rem;
+}
+
+.input-field input.error, .input-field select.error {
+    border: 1px solid red;
+}
+
+.input-field p.error {
+    color: red;
+}
+
+.input-field .input-subscribe {
+    width: 1rem;
+    height: 1rem;
+    margin: 0rem 0rem;
+}
+
+.input-date-time {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.5rem;
+    max-width: 35rem;
+}
+
+.input-date-time .input-field {
+    grid-column: span 1;
+}
+
+.input-quantity input {
+    width: 4rem;
+    text-align: center;
+}
+
+.input-quantity button {
+    height: 2.2rem;
+    padding: 0 1.1rem;
+    font-weight: bolder;
+    background-color: brown;
+    border: 1px solid brown;
+    color: white;
+}
+
+.input-petGroup {
+    margin: 0.5rem 0;
+}
+
+.petGroup input {
+    width: auto;
+    height: auto;
+    margin: initial;
+}
+
+.input-petGroup label {
+    margin-left: 0.5rem;
+}
+
+.form-submit {
+    background-color: brown;
+    color: white;
+    padding: 0.8rem 1rem;
+    max-width: 35rem;
+    font-size: large;
+    font-weight: bold;
+}
+
+.form-submit:disabled {
+    opacity: 0.5;
+}
+
+textarea.input-comment {
+    height: 3rem;
+
+}
+
+label.required:after {
+    content: " *";
+    color: red;
+    font-size: large;
+}
+
+
+/** Desktop sizes
+*/
+@media (min-width: 950px) {
+    .form-container {
+        grid-column: span 1;
+        padding: 0 1rem 0 5rem;
+    }
+
+    .form-image {
+        grid-column: span 1;
+        padding: 0 2rem;
+    }
+}
