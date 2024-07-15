@@ -1,0 +1,21 @@
+.link-button {
+    background-color: white;
+    padding: 0.5rem;
+    margin-top: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2rem;
+    border: 3px solid #20ccf8;
+    border-radius: 1rem;
+    min-width: 12rem;
+    color: inherit;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: background-color .1s, border-color .1s, box-shadow .1s, color .1s, -webkit-box-shadow .1s;
+}
+
+.link-button:hover {
+    background-color: #20ccf8;
+    color: white;
+}
